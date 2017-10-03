@@ -1,14 +1,17 @@
-baseURL = ""
+baseurl = "http://otterfi-jamesho.c9users.io/"
 languageCode = "en-us"
 title = "OtterFi"
 theme = "otter"
 contentdir = "content" 
 layoutdir = "layouts" 
 publishdir = "public" 
-canonifyurls = true 
+canonifyurls = false 
 MetaDataFormat = "toml" 
 [indexes] 
     category = "categories" 
     tag = "tags" 
 [author] 
     name = "James Ho" 
+[permalinks]
+    page = "/:filename"
+    about = "/:filename"
