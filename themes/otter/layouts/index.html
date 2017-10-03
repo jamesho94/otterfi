@@ -1,5 +1,18 @@
 {{ partial "header.html" . }}
 
+<button>Regular Button</button>
+<button class="btn btn-primary">Primary Button</button>
+<button class="btn btn-info">Info Button</button>
+<button class="btn btn-success">Success Button</button>
+<button class="btn btn-warning">Warning Button</button>
+<button class="btn btn-danger">Danger Button</button>
+
+<div class="row">
+  <div class="col-xs-4">Left section</div>
+  <div class="col-xs-4">Middle section</div>
+  <div class="col-xs-4">Right section</div>
+</div>
+
   <h1>Pages</h1> 
   {{ range first 10 .Data.Pages }}
     {{if eq .Type "page"}}
