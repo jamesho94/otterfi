@@ -1,17 +1,22 @@
 {{ partial "header.html" . }}
 
-<button>Regular Button</button>
-<button class="btn btn-primary">Primary Button</button>
-<button class="btn btn-info">Info Button</button>
-<button class="btn btn-success">Success Button</button>
-<button class="btn btn-warning">Warning Button</button>
-<button class="btn btn-danger">Danger Button</button>
-
-<div class="row">
-  <div class="col-xs-4">Left section</div>
-  <div class="col-xs-4">Middle section</div>
-  <div class="col-xs-4">Right section</div>
+<div style="background:url('img/splash1.jpg') center center; background-size:cover;" class="jumbotron">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <h1 class="display-3" style="color:white;font-family:'Lora',serif;" align="center">Intelligent Financial Management</h1>
+        <hr class="my-4" style="border-color:white" align="center">
+        <p class="lead" style="color:white;font-family:'Open Sans',sans-serif" align="center">OtterFi provides you with the knowledge to manage your money better than the pros.</p>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+  </div>
 </div>
+  
+  
 
   <h1>Pages</h1> 
   {{ range first 10 .Data.Pages }}
