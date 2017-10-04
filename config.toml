@@ -6,7 +6,7 @@ contentdir = "content"
 layoutdir = "layouts" 
 publishdir = "public" 
 canonifyurls = false 
-MetaDataFormat = "toml" 
+metaDataFormat = "toml" 
 [indexes] 
     category = "categories" 
     tag = "tags" 

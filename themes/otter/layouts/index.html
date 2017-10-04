@@ -15,22 +15,32 @@
     </div>
   </div>
 </div>
-  
-  
 
-  <h1>Pages</h1> 
-  {{ range first 10 .Data.Pages }}
-    {{if eq .Type "page"}}
-      <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+<ul>
 
-    {{ end }}
-  {{ end }}
+
+
+
+
+  </ul>
   
-  <h1>Posts</h1> 
-  {{ range first 10 .Data.Pages }}
-    {{if eq .Type "post"}}
-       <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    {{ end }}
-  {{ end }}
-    
+<div>
+  {{ range .Site.Taxonomies.categories.goals.Pages}}
+        {{.Title}}{{.Category}}
+  {{end}}
+</div>
+
+<div>
+  {{ range .Site.Taxonomies.categories.credit.Pages }}
+    {{.Title}}
+  {{end}}
+</div>
+
+<div>
+  {{ range .Site.Taxonomies.categories.banking.Pages }}
+    {{.Title}}
+  {{end}}
+</div>
+
+
 {{ partial "footer.html" . }}
