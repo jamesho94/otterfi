@@ -1,1 +1,36 @@
 hugo server --baseURL=http://otterfi-jamesho.c9users.io/ --bind=0.0.0.0 --port=8080
+
+color palette
+    58F3FF
+    50E8C9
+    65FFB4
+    50E873
+    63FF58
+    
+code that might be useful
+
+<div>
+  {{ range .Site.Taxonomies.categories.goals.Pages}}
+        {{.Title}}{{.Date}}
+  {{end}}
+</div>
+
+<div>
+  {{ range .Site.Taxonomies.tags.credit.Pages }}
+    {{.Title}}
+  {{end}}
+</div>
+
+<div>
+  {{ range .Site.Taxonomies.tags.banking.Pages }}
+    {{.Title}}
+  {{end}}
+</div>
+
+<ul>
+    {{ range $key, $value := .Site.Taxonomies.categories }}
+    <li>
+        <a href="/{{ $key | urlize }}/">{{ $key | title }}</a>
+    </li>
+    {{ end }}
+</ul>
