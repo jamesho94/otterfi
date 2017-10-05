@@ -1,6 +1,6 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-categories= ["banking"]
+categories= ["insurance"]
 draft= false
 +++

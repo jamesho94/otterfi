@@ -1,7 +1,6 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-tags= ["goals"]
-categories= ["goals"]
-draft= true
+categories= ["retirement"]
+draft= false
 +++
