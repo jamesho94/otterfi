@@ -34,3 +34,92 @@ code that might be useful
     </li>
     {{ end }}
 </ul>
+
+
+
+<!--Tile Row 1-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="card-group">
+      
+      <!-- Banking Tile -->
+        <div class="col-sm-4">
+          <div class="card border-primary">
+             <a href="/banking/" class="btn btn-primary" style="border-radius:0"><h4 class="card-header"style="font-family:'Lora',serif; text-align:center; background:transparent; border:white">Banking</h4></a>
+              <div class="card-body">
+                <p class="card-text" style="font-family:'Open Sans',sans-serif; text-align:justify">Thousands of financial products are available from hundreds of institutions in the U.S. alone. 
+                  Cut through the marketing to make sense of all the options and find the ones that meet your needs.</p>
+              </div> <!-- End card body div -->
+          </div> <!-- End card div -->
+        </div> <!-- End column div -->
+        
+      <!-- Budgeting Tile -->
+        <div class="col-sm-4">
+          <div class="card border-info">
+             <a href="/budgeting/" class="btn btn-info" style="border-radius:0"><h4 class="card-header"style="font-family:'Lora',serif; text-align:center; background:transparent; border:white">Budgeting</h4></a>
+              <div class="card-body">
+                <p class="card-text" style="font-family:'Open Sans',sans-serif; text-align:justify">Do you know where your money is going? A budget is the best way to 
+                  transform your dreams into financial goals, monitor your progress, and guide you on your way to financial success.</p>
+              </div> <!-- End card body div -->
+          </div> <!-- End card div -->
+        </div> <!-- End column div -->
+        
+      <!-- Debt Tile -->
+        <div class="col-sm-4">
+          <div class="card border-danger">
+             <a href="/debt/" class="btn btn-danger" style="border-radius:0"><h4 class="card-header"style="font-family:'Lora',serif; text-align:center; background:transparent; border:white">Debt</h4></a>
+              <div class="card-body">
+                <p class="card-text" style="font-family:'Open Sans',sans-serif; text-align:justify">You're not alone if you feel like you're constantly buried in debt. 
+                  Dig yourself out with optimal payment strategies that minimize interest costs and accelerate your payoff date.</p>
+              </div> <!-- End card body div -->
+          </div> <!-- End card div -->
+        </div> <!-- End column div -->
+        
+    </div><!-- End card group div -->
+  </div><!-- End row div -->
+</div><!-- End container div -->
+
+<br/>
+
+<!--Tile Row 2-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="card-group">
+      
+      <!-- Insurance Tile -->
+        <div class="col-sm-4">
+          <div class="card border-warning">
+             <a href="/insurance/" class="btn btn-warning" style="border-radius:0"><h4 class="card-header"style="font-family:'Lora',serif; text-align:center; background:transparent; border:white">Insurance</h4></a>
+              <div class="card-body">
+                <p class="card-text" style="font-family:'Open Sans',sans-serif; text-align:justify">When life happens the right insurance policy can prevent an inconvenience from becoming a catastrophe.
+                  Navigate the complexities of risk management to find the best coverage for the lowest price.</p>
+              </div> <!-- End card body div -->
+          </div> <!-- End card div -->
+        </div> <!-- End column div -->
+        
+      <!-- Investing Tile -->
+        <div class="col-sm-4">
+          <div class="card border-success">
+             <a href="/investing/" class="btn btn-success" style="border-radius:0"><h4 class="card-header"style="font-family:'Lora',serif; text-align:center; background:transparent; border:white">Investing</h4></a>
+              <div class="card-body">
+                <p class="card-text" style="font-family:'Open Sans',sans-serif; text-align:justify">Ditch Wall Street's fees and take control of your own investments. 
+                  With the proper asset allocation in a diversified portfolio, you can sit and let compound interest do the heavy lifting.</p>
+              </div> <!-- End card body div -->
+          </div> <!-- End card div -->
+        </div> <!-- End column div -->
+        
+      <!-- Retirement Tile -->
+        <div class="col-sm-4">
+          <div class="card border-secondary">
+             <a href="/retirement/" class="btn btn-secondary" style="border-radius:0"><h4 class="card-header"style="font-family:'Lora',serif; text-align:center; background:transparent; border:white">Retirement</h4></a>
+              <div class="card-body">
+                <p class="card-text" style="font-family:'Open Sans',sans-serif; text-align:justify">Who says you have to be 65 years old to retire?
+                  Become financially independent and retire on your own terms by calculating your target net worth and building a plan to get there.</p>
+              </div> <!-- End card body div -->
+          </div> <!-- End card div -->
+        </div> <!-- End column div -->
+        
+    </div><!-- End card group div -->
+  </div><!-- End row div -->
+</div><!-- End container div -->
+
