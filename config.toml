@@ -7,9 +7,11 @@ layoutdir = "layouts"
 publishdir = "public" 
 canonifyurls = false 
 metaDataFormat = "toml" 
-[indexes] 
+[taxonomies] 
     category = "categories" 
     tag = "tags" 
+    color = "colors"
+    tagline = "taglines"
 [author] 
     name = "James Ho" 
 [permalinks]

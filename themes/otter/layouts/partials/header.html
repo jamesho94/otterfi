@@ -7,32 +7,50 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
 <head>
 
- 
 <!--Navbar-->
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-  <a class="navbar-brand-logo" href="{{.Site.BaseURL}}">
-      <img src="/img/logo.png" alt="OtterFi" height=50px>
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        {{ range $key, $value := .Site.Taxonomies.categories }}
-          <li>
-            <a class="nav-link" style="font-family:'Open Sans',sans-serif" href="/{{ $key | urlize }}/">{{ $key | title }}</a>
+<div class="container-fluid">
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+  <!-- Brand -->
+    <a class="navbar-brand-logo" href="{{.Site.BaseURL}}">
+        <img src="/img/logo.png" alt="OtterFi" height=50px>
+    </a>
+  
+  <!-- Links -->
+    <div class="collapse navbar-collapse" id="nav-content">   
+      <ul class="navbar-nav  ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/about/" style="font-family:'Open Sans',sans-serif">About</a>
+        </li>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-family:'Open Sans',sans-serif">Library</a>
+          <div class="dropdown-menu" aria-labelledby="Preview">
+            {{ range $key, $value := .Site.Taxonomies.categories }}
+                <a class="dropdown-item" style="font-family:'Open Sans',sans-serif" href="/{{ $key | urlize }}/">{{ $key | title }}</a>
+            {{ end }}
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="font-family:'Open Sans',sans-serif">Calculators</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" style="font-family:'Open Sans',sans-serif">Blog</a>
+        </li>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="/contact/" style="background-color:#65FFB4; color:white; font-family:'Open Sans',sans-serif">Contact</a>
           </li>
-        {{ end }}
-      </li>
-    </ul>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-          <a class="nav-link active" href="/contact/" style="background-color:#65FFB4;">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
 
 </head>
-<body>
+<body style="padding-top: 60px">

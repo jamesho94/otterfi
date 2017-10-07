@@ -1,15 +1,16 @@
-<div style="background:url('/img/{{ .Title }}.jpg') center center; background-size:cover;" class="jumbotron">
-  <div class="container-fluid">
+
+<div style="background-color:{{ $.Params.colors }}; background-size:cover;" class="jumbotron">
+  <div class="container">
     <div class="row">
-      <div class="col-sm-2">
+      <div class="col-2"></div>
+      <div class="col-2">
+          <img src="/img/solo.png" alt="OtterFi" height=200px style="float:right">
       </div>
-      <div class="col-sm-8">
-        <h1 class="display-3" style="color:white;font-family:'Lora',serif;" align="center">{{ .Title }}</h1>
-        <hr class="my-4" style="border-color:white" align="center">
-        <p class="lead" style="color:white;font-family:'Open Sans',sans-serif" align="center">{{ .Description }}</p>
+        <div style="border-left:10px solid #fff;height:200px"></div>  
+      <div class="col-5">
+        <h1 style="font-family: 'Pacifico',cursive; color:white; font-size:1000%; float:left">{{ $.Params.title }}</h1>
       </div>
-      <div class="col-sm-2">
-      </div>
+      <div class="col-3"></div>
     </div>
   </div>
 </div>
