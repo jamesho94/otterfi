@@ -1,6 +1,31 @@
 {{ partial "header.html" . }}
 {{ partial "banner.html" . }}
-        {{.Content}}
+        
+{{.Content}}
+
+{{ range .Data.Pages }}
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2"></div>
+          <div class="col-lg-8">
+          <div style="background-color:#F8FDFE;background-size:cover;box-shadow: 10px 10px 5px #AEB1B1;" class="jumbotron">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <h1 class="display-6" style="font-family: 'Pacifico',cursive; color:{{ $.Params.colors }}" align="center"> {{ .Title }} </h1><br/>
+                </div>
+                <div class="col-lg-6">
+                  <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">{{ .Summary }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-2"></div>
+      </div>
+    </div>
+{{ end }}
+
 
 
 {{ partial "footer.html" . }}

@@ -1,5 +1,8 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-draft= true
+categories= "profit"
+colors= "#3498db"
+tags= ""
+draft= "true"
 +++

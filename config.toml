@@ -11,9 +11,5 @@ metaDataFormat = "toml"
     category = "categories" 
     tag = "tags" 
     color = "colors"
-    tagline = "taglines"
 [author] 
     name = "James Ho" 
-[permalinks]
-    page = "/:filename"
-    about = "/:filename"

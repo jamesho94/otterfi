@@ -1,5 +1,8 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-draft= true
+categories= "debt"
+colors= "#e74c3c"
+tags= ""
+draft= "true"
 +++

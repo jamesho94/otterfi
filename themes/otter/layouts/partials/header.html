@@ -22,16 +22,13 @@
   <!-- Links -->
     <div class="collapse navbar-collapse" id="nav-content">   
       <ul class="navbar-nav  ml-auto">
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false" style="font-family:'Open Sans',sans-serif">Library</a>
-          <div class="dropdown-menu" aria-labelledby="Preview">
-            {{ range $key, $value := .Site.Taxonomies.categories }}
-                <a class="dropdown-item" style="font-family:'Open Sans',sans-serif" href="/{{ $key | urlize }}/">{{ $key | title }}</a>
-            {{ end }}
-          </div>
-        </li>
+        {{ range $key, $value := .Site.Taxonomies.categories }}
+          <li class = "nav-item">
+            <a class="nav-link" style="font-family:'Open Sans',sans-serif" href="/{{ $key | urlize }}/">{{ $key | title }}</a>
+          </li>
+        {{ end }}
         <li class="nav-item">
-          <a class="nav-link" href="#" style="font-family:'Open Sans',sans-serif">Blog</a>
+          <a class="nav-link" href="#" style="font-family:'Open Sans',sans-serif">Calculators</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" style="font-family:'Open Sans',sans-serif">Blog</a>
