@@ -10,7 +10,8 @@ metaDataFormat = "toml"
 [taxonomies] 
     category = "categories" 
     tag = "tags" 
-    color = "colors"
+    primarycolor = "primarycolors"
+    secondarycolor = "secondarycolors"
     description = "descriptions"
 [author] 
     name = "James Ho" 

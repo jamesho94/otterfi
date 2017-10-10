@@ -1,31 +1,9 @@
 hugo server --baseURL=http://otterfi-jamesho.c9users.io/ --bind=0.0.0.0 --port=8080
 
-color palette
-    58F3FF
-    50E8C9
-    65FFB4
-    50E873
-    63FF58
-    
+
 code that might be useful
 
-<div>
-  {{ range .Site.Taxonomies.categories.goals.Pages}}
-        {{.Title}}{{.Date}}
-  {{end}}
-</div>
 
-<div>
-  {{ range .Site.Taxonomies.tags.credit.Pages }}
-    {{.Title}}
-  {{end}}
-</div>
-
-<div>
-  {{ range .Site.Taxonomies.tags.banking.Pages }}
-    {{.Title}}
-  {{end}}
-</div>
 
 <ul>
     {{ range $key, $value := .Site.Taxonomies.categories }}
@@ -35,4 +13,27 @@ code that might be useful
     {{ end }}
 </ul>
 
+<!-- This passes data to the tile.html partial template -->
 
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">      
+          {{ partial "tile.html" (dict "id" "profit" "header" "Profit & Loss" "gradienttop" "#00d2ff" "gradientbottom" "#3a7bd5") }}
+          {{ partial "tile.html" (dict "id" "budgeting" "header" "Budgeting" "gradienttop" "#93EDC7" "gradientbottom" "#1CD8D2") }}
+          {{ partial "tile.html" (dict  "id" "debt" "header" "Debt & Credit" "gradienttop" "#ff9966" "gradientbottom" "#ff5e62") }}
+          {{ partial "tile.html" (dict  "id" "insurance" "header" "Insurance" "gradienttop" "#EDDE5D" "gradientbottom" "#F09819") }}
+          {{ partial "tile.html" (dict  "id" "investments" "header" "Investments" "gradienttop" "#38ef7d" "gradientbottom" "#11998e") }}
+          {{ partial "tile.html" (dict  "id" "retirement" "header" "Retirement" "gradienttop" "#9D50BB" "gradientbottom" "#6E48AA")}}
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+</div>
+
+<!-- This is the tile.html partial template and how the data is received -->
+
+<div style="background:linear-gradient(to bottom, {{ .gradienttop }}, {{ .gradientbottom }});background-size:cover;cursor: pointer;" class="jumbotron tile" onclick="listpage({{ .id }})">
+    <div class="container-fluid">
+        <h1 class="display-4" style="font-family:'Open Sans',sans-serif; font-weight:800; color:white; font-size:6vw;" align="center">{{ .header }}</h1>
+    </div>
+</div>

@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<div style="background-color:#65FFB4; background-size:cover;" class="jumbotron">
+<div style="background:#65FFB4; background-size:cover;" class="jumbotron">
   <div class="container-fluid">
         <h1 style="font-family: 'Pacifico',cursive; color:white; font-size:8vw;" align="center">Finance. Personalized.</h1>
   </div>
@@ -14,13 +14,14 @@
         <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">Our approach to personal finance revolves around the simple premise that managing your money like a 
         business will improve your financial situation without radically changing your lifestyle.<br/><br/>This blog will provide you with a framework to objectively evaluate your finances and 
         monitor changes over time. You'll learn how to apply corporate finance and accounting principles to optimize your spending, maximize your savings, and increase your 
-        personal profitability. Start managing your money like  a business so that you can <strong>profit</strong> like one<br/><br/>Best of all, everything on this site is <strong>100% free.</strong></p>
+        personal profitability. We're here to help you manage your money like a business so that you can <strong>profit</strong> like one<br/><br/>Best of all, everything on this site is <strong>100% free.</strong></p>
       </div>
       <div class="col-lg-5">
         <h5 style="color:#6F7171;font-family:'Open Sans',sans-serif" align="center"><strong>About Us</strong></h5>
-        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">We’re professional accountants with a passion for personal finance (and otters). 
-        We’ve learned so much from the personal finance community and this blog is just our way of paying it forward.<br/><br/>We hope that you’ll benefit from the information that 
-        we provide and if you have any questions, don’t hesitate to reach out.</p>
+        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">We’re professional accountants with a passion for personal finance (and otters)! We started this blog
+        as a response to the prevalence of biased, misinformed, and just plain bad financial advice that we kept encountering online. Our promise to you is that everything you read on this 
+        site is backed by our research and is not influenced by any factor other than what we think will help you manage your financial life.
+        <br/><br/>We hope that you’ll benefit from the information that we provide and if you have any questions, please don’t hesitate to reach out.</p>
       </div>
       <div class="col-lg-1"></div>
       </div>
@@ -29,12 +30,13 @@
 
 <br/>
 
-{{ partial "tile.html" (dict "id" "profit" "header" "Profit & Loss" "color" "#3498db") }}
-{{ partial "tile.html" (dict "id" "budgeting" "header" "Budgeting" "color" "#1abc9c") }}
-{{ partial "tile.html" (dict  "id" "debt" "header" "Debt & Credit" "color" "#e74c3c") }}
-{{ partial "tile.html" (dict  "id" "insurance" "header" "Insurance" "color" "#f39c12") }}
-{{ partial "tile.html" (dict  "id" "investments" "header" "Investments" "color" "#2ecc71") }}
-{{ partial "tile.html" (dict  "id" "retirement" "header" "Retirement" "color" "#9b59b6")}}
-
-
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-11">
+        <h3 style="color:#6F7171;font-family:'Open Sans',sans-serif;">Recent Posts</h1>
+      </div>
+    </div>
+</div>
     
+{{ partial "footer.html" . }}
