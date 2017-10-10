@@ -11,3 +11,4 @@ function static(hometile){
 function listpage(title){
     window.location.href = "/" + title;
 }
+

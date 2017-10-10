@@ -1,21 +1,35 @@
 {{ partial "header.html" . }}
 {{ partial "banner.html" . }}
         
-{{.Content}}
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-5">
+        <h5 style="color:#6F7171;font-family:'Open Sans',sans-serif;" align="center"><strong>{{ .Title }} 2.0</strong></h5>
+        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">{{ $.Params.descriptions }}</p>
+      </div>
+      <div class="col-lg-5">
+        <h5 style="color:#6F7171;font-family:'Open Sans',sans-serif" align="center"><strong>Topics</strong></h5>
+        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">{{ .tags }} {{ end }}
+      </div>
+      <div class="col-lg-1"></div>
+      </div>
+    </div>
+</div>
 
 {{ range .Data.Pages }}
     <div class="container-fluid">
         <div class="row">
           <div class="col-lg-2"></div>
           <div class="col-lg-8">
-          <a href="{{ .Permalink }}"><div style="background-color:#F8FDFE;background-size:cover;box-shadow: 10px 10px 5px #AEB1B1;" class="jumbotron"></a>
+          <div style="background-color:#F8FDFE;background-size:cover;box-shadow: 5px 5px 2.5px #AEB1B1; cursor: pointer;" class="jumbotron" onclick="javascript:location.href={{ .Permalink }}">
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-6">
                   <h1 class="display-6" style="font-family: 'Pacifico',cursive; color:{{ $.Params.colors }}" align="center"> {{ .Title }} </h1><br/>
                 </div>
                 <div class="col-lg-6">
-                  <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">{{ .Summary }}</p>
+                  <p style="color:{{ $.Params.colors }};font-family:'Open Sans',sans-serif" align="justify">{{ .Summary }}</p>
                 </div>
               </div>
             </div>

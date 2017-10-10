@@ -2,5 +2,6 @@
 title= "Debt & Credit"
 categories= "debt"
 colors= "#e74c3c"
+descriptions = "Learn debt management strategies that will minimize your interest payments while accelerating your payoff date.  Understand how your credit score is calculated and how to protect your good standing."
 draft= false
 +++

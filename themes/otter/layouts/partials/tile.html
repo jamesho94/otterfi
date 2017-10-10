@@ -1,19 +1,14 @@
 <div class="container-fluid">
     <div class="row">
-      <div class="col-lg-2"></div>
-      <div class="col-lg-8">
-      <div style="background-color:#F8FDFE;background-size:cover;box-shadow: 10px 10px 5px #AEB1B1;cursor: pointer;" class="jumbotron tile" onmouseover="hover(this)" onmouseout="static(this)" onclick="listpage({{ .id }})">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-lg-6">
-              <h1 class="display-4" style="font-family: 'Pacifico',cursive; color:{{ .color }}" align="center">{{ .header }}</h1></br>
-            </div>
-            <div class="col-lg-6">
-                <p style="color:{{ .color }};font-family:'Open Sans',sans-serif" align="justify">{{ .description }}</p>
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
+        <div style="background-color:#F8FDFE;background-size:cover;cursor: pointer;" class="jumbotron tile" onclick="listpage({{ .id }})">
+          <div class="container-fluid">
+                <h1 class="display-4" style="font-family: 'Pacifico',cursive; color:{{ .color }}; font-size:6vw;" align="center">{{ .header }}</h1>
             </div>
           </div>
         </div>
-      </div>
-    <div class="col-lg-2"></div>
+      <div class="col-sm-2"></div>
+    </div>
   </div>
 </div>
