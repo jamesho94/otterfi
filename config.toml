@@ -14,9 +14,3 @@ metaDataFormat = "toml"
 [author] 
     name = "James Ho" 
 [params]
-    ProfitColor = "#3498db"
-    BudgetingColor = "#1abc9c"
-    DebtColor = "#e74c3c"
-    InsuranceColor = "#f39c12"
-    InvestmentsColor = "#2ecc71"
-    RetirementColor = "#9b59b6"
