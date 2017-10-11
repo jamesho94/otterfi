@@ -8,11 +8,8 @@ publishdir = "public"
 canonifyurls = false 
 metaDataFormat = "toml" 
 [taxonomies] 
-    category = "categories" 
-    tag = "tags" 
-    primarycolor = "primarycolors"
-    secondarycolor = "secondarycolors"
-    description = "descriptions"
+    category = "categories"
+    tag = ""
 [author] 
     name = "James Ho" 
 [params]
