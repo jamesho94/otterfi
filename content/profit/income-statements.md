@@ -1,9 +1,10 @@
 +++
-title= "Income Statement"
+title= "Income Statements"
 date= 2017-10-08T00:28:52Z
 categories= "profit"
-colors= "#3498db"
-tags= ""
+primarycolors= "#3a7bd5"
+secondarycolors= "#00d2ff"
+tags= ["income","expenses"]
 draft= "true"
 +++
 

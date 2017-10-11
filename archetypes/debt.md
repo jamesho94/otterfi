@@ -2,7 +2,8 @@
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
 categories= "debt"
-colors= "#e74c3c"
+primarycolors= "#ff5e62"
+secondarycolors= "#ff9966"
 tags= ""
 draft= "true"
 +++

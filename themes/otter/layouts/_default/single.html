@@ -1,8 +1,31 @@
 {{ partial "header.html" . }}
+{{ partial "singlepagebanner.html" . }}
 
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <section id="main">
+          <div>
+                <article id="content">
+                   {{ .Content }}
+                </article>
+          </div>
+        </section>
+        <aside id="meta">
+            <div>
+                {{ with .PrevInSection }}
+                  <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+                {{ end }}
+                {{ with .NextInSection }}
+                  <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+                {{ end }}
+            </div>
+        </aside>
+        </div>
+    <div class="col-lg-2"></div>
+  </div>
+</div>
 
 
 {{ partial "footer.html" . }}

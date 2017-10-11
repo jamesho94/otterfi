@@ -2,7 +2,8 @@
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
 categories= "retirement"
-colors= "#9b59b6"
+primarycolors= "#9D50BB"
+secondarycolors= "#6E48AA"
 tags= ""
 draft= "true"
 +++

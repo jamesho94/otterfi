@@ -1,16 +1,16 @@
 {{ partial "header.html" . }}
-{{ partial "banner.html" . }}
+{{ partial "listpagebanner.html" . }}
         
 <div class="container-fluid">
     <div class="row">
       <div class="col-lg-1"></div>
       <div class="col-lg-5">
         <h5 style="color:#6F7171;font-family:'Open Sans',sans-serif;" align="center"><strong>{{ .Title }} 2.0</strong></h5>
-        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify">{{ $.Params.descriptions }}</p>
+        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="left">{{ $.Params.descriptions }}</p>
       </div>
       <div class="col-lg-5">
         <h5 style="color:#6F7171;font-family:'Open Sans',sans-serif" align="center"><strong>Topics</strong></h5>
-        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="justify"></p>
+        <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="left"></p>
       </div>
       <div class="col-lg-1"></div>
       </div>
@@ -24,7 +24,7 @@
           <div class="col-lg-8">
             <div style="background-color:#F8FDFE;background-size:cover; cursor: pointer;" class="jumbotron" onclick="javascript:location.href={{ .Permalink }}">
               <div class="container-fluid">
-                  <h3 style="font-family:'Open Sans',sans-serif; font-weight:800; color:#6F7171;" align="left"> {{ .Title }} </h3><br/>
+                  <h3 style="font-family:'Open Sans',sans-serif; font-weight:700; color:#6F7171;" align="left"> {{ .Title }} </h3><br/>
                   <p style="color:#6F7171;font-family:'Open Sans',sans-serif" align="left">{{ .Summary }}</p>
               </div>
             </div>
