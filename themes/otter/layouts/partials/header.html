@@ -26,9 +26,10 @@
   <!-- Links -->
     <div class="collapse navbar-collapse" id="nav-content">   
       <ul class="navbar-nav  ml-auto">
-        {{ range $key, $value := .Site.Taxonomies.categories }}
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
           <li class = "nav-item">
-            <a class="nav-link" style="font-family:'Open Sans',sans-serif" href="/{{ $key | urlize }}/">{{ $key | title }}</a>
+            <a class="nav-link{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>
           </li>
         {{ end }}
         <ul class="nav nav-pills">

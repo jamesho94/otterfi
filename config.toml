@@ -7,8 +7,9 @@ layoutdir = "layouts"
 publishdir = "public" 
 canonifyurls = false 
 metaDataFormat = "toml" 
+sectionPagesMenu = "main"
 [taxonomies] 
-    category = "categories"
+    category = ""
     tag = ""
 [author] 
     name = "James Ho" 

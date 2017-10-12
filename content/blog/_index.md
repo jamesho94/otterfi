@@ -1,5 +1,5 @@
 +++
-title= "The Official Blog"
+title= "Blog"
 categories= "blog"
 primarycolors= "#0cebeb"
 secondarycolors= "#29ffc6"
