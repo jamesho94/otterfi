@@ -1,9 +1,9 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-categories= "budgeting"
-primarycolors= "#1CD8D2"
-secondarycolors= "#93EDC7"
+banner= "Budgeting"
+primarycolors= "#96deda"
+secondarycolors= "#39F3BB"
 tags= ""
 draft= "true"
 +++

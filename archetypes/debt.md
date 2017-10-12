@@ -1,9 +1,9 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-categories= "debt"
-primarycolors= "#ff5e62"
-secondarycolors= "#ff9966"
+banner= "Debt & Credit"
+primarycolors= "#f78ca0"
+secondarycolors= "#fe9a8b"
 tags= ""
 draft= "true"
 +++

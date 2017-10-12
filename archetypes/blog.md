@@ -1,9 +1,9 @@
 +++
 title= "{{ replace .TranslationBaseName "-" " " | title }}"
 date= {{ .Date }}
-categories= "blog"
-primarycolors= "#0cebeb"
-secondarycolors= "#29ffc6"
+banner= "Blog"
+primarycolors= "#89f7fe"
+secondarycolors= "#66a6ff"
 tags= ""
 draft= "true"
 +++

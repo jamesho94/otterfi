@@ -1,8 +1,8 @@
 +++
-title= "Profit & Loss"
-categories= "profit"
-primarycolors= "#3a7bd5"
-secondarycolors= "#00d2ff"
-descriptions= "Objectively evaluate your financial situation through personal financial statements that will monitor your spending and calculate your net worth. Learn how to use financial metrics to gain insights and find areas of improvement."
+title= "Profit"
+banner= "Profit & Loss"
+primarycolors= "#96deda"
+secondarycolors= "#50c9c3"
+descriptions= "Objectively evaluate your financial health by creating personal balance sheets and income statements that will track your spending and calculate your net worth. Use financial metrics to discover trends and insights that will allow you to optimize your spending and monitor your progress towards goals."
 draft= false
 +++

@@ -1,9 +1,9 @@
 +++
 title= "Balance Sheets"
 date= 2017-10-08T00:28:43Z
-categories= "profit"
-primarycolors= "#3a7bd5"
-secondarycolors= "#00d2ff"
+banner= "Profit & Loss"
+primarycolors= "#96deda"
+secondarycolors= "#50c9c3"
 tags= ["accounts","balances"]
 draft= "true"
 +++

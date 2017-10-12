@@ -1,24 +1,26 @@
 {{ partial "header.html" . }}
-{{ partial "singlepagebanner.html" . }}
+{{ partial "pagebanner.html" . }}
 
 <div class="container-fluid">
     <div class="row">
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
+        <h1 class="display-6" style="font-family:'Open Sans',sans-serif; font-weight:700; color:#6F7171;" align="left">{{ .Title }}</h1>
+        <p style="font-family:'Open Sans',sans-serif;font-weight:700; color:#6F7171;" align="left">{{ .Date.Format "Jan 2, 2006" }}</p>
         <section id="main">
           <div>
-                <article id="content">
-                   {{ .Content }}
-                </article>
+            <article id="content">
+              <p style="font-family:'Open Sans',sans-serif; color:#6F7171;" align="left">{{ .Content }}</p>
+            </article>
           </div>
         </section>
         <aside id="meta">
             <div>
                 {{ with .PrevInSection }}
-                  <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+                  <p style="font-family:'Open Sans',sans-serif; color:#6F7171;" align="left">Previous Article:<a class="previous" href="{{.Permalink}}"> {{.Title}}</a></p>
                 {{ end }}
                 {{ with .NextInSection }}
-                  <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+                  <p style="font-family:'Open Sans',sans-serif; color:#6F7171;" align="left">Next Article:<a class="next" href="{{.Permalink}}"> {{.Title}}</a></p>
                 {{ end }}
             </div>
         </aside>
